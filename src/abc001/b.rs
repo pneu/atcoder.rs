@@ -1,6 +1,8 @@
 #[allow(dead_code)]
-fn read<T>() -> T where
-T: std::str::FromStr {
+fn read<T>() -> T
+where
+    T: std::str::FromStr,
+{
     let mut s = String::new();
     std::io::stdin().read_line(&mut s).ok();
     s.trim().parse().ok().unwrap()
@@ -21,7 +23,8 @@ fn calc(m: i32) -> String {
         m + 50000
     } else if m <= 70000 {
         (m - 30000) / 5 + 80000
-    } else { /* if 70000 < m */
+    } else {
+        /* if 70000 < m */
         89000
     };
     format!("{:>02}", (vv / 1000))

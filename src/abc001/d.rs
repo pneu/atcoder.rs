@@ -61,7 +61,8 @@ fn calc(v: &Vec<String>) -> Vec<String> {
         }
     }
 
-    let rs: Vec<String> = r.iter()
+    let rs: Vec<String> = r
+        .iter()
         .map(|x| {
             let h0 = x.0 / 60;
             let m0 = x.0 % 60;
