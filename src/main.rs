@@ -1,5 +1,5 @@
 extern crate atcoder;
 
 fn main() {
-    atcoder::abc001::d::main();
+    atcoder::abc002::a::main();
 }
