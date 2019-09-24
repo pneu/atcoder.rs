@@ -46,9 +46,7 @@ fn calc(v: &Vec<i32>) -> f64 {
     let xc = v[4];
     let yc = v[5];
 
-    let a
-        = xa * yb + xb * yc + xc * ya
-        - (xa * yc + xc * yb + xb * ya);
+    let a = xa * yb + xb * yc + xc * ya - (xa * yc + xc * yb + xb * ya);
     // dround((xb - xa) * (yc - ya) - (yb - ya) * (xc - xa)).abs()
     ((a as f64) / 2f64).abs()
 }
